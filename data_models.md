@@ -21,6 +21,12 @@ The above image illustrates an example sltructure of the DaSH side of the TRE en
 
 ## @id - unique identifier
 
+```JSON
+
+   "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv"
+
+```
+
 Within the same TRE environment, base IRI for all elements should be the same - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/"
 
 The PowershellScripts will automatically modify IRIs of individual provenance elements based on the project context and their type. 
@@ -31,9 +37,21 @@ Individual files contained in the folders will contain the name of teh folder in
 
 ## @type 
 
+```JSON
+
+    "@type":[ "File", "shp_DataLinkagePlan"]
+
+```
+
 This property is typically modelled as a JSON array to enable multiple types to be associated with the particular element (e.g., the element can be of type of File (i.e. to align with the RO-Crate vocabulary) as defined in the schema.org (http://schema.org/MediaObject) but at the same time it can be also of type of https://w3id.org/shp#DataLinkagePlan defined in the SHP ontology. 
 
 ## description
+
+```JSON
+
+     "description":"This  is  data  linkage plan description."
+
+```
 
 Auto-generated value.
 
