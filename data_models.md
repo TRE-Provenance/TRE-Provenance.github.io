@@ -118,6 +118,11 @@ Agents that were responsible for the activity or creation/modification of a file
          }
       ]
    },
+```
+
+Now we need to describe the [LinkagePlanDataResource](https://w3id.org/shp#DataLinkagePlan) which was mentioned in the "exif" part of the previous description. 
+
+```JSON
    {
       "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#DataSource.a35d45fd-cfcf-44d7-96a3-b44de21a9652",
       "@type":[
@@ -133,6 +138,11 @@ Agents that were responsible for the activity or creation/modification of a file
          }
       ]
    },
+```
+
+The following code describes the collection of requested variables mentioned in the [LinkagePlanDataResource](https://w3id.org/shp#DataLinkagePlan) description.
+
+```JSON
    {
       "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc",
       "@type":[
@@ -144,6 +154,11 @@ Agents that were responsible for the activity or creation/modification of a file
          }
       ]
    },
+```
+
+Finally, we will describe any constraints mentioned in the [LinkagePlanDataResource](https://w3id.org/shp#DataLinkagePlan) description. In this case, we describe a constraint on the height variable with min value of 160 and max value of 190 (assumuning the variable lists height of people in cm).
+
+```JSON
    {
       "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#VariableConstraint.3987e401-abc0-4d84-9ba2-0fd3a635e6e2",
       "@type":[
@@ -155,6 +170,4 @@ Agents that were responsible for the activity or creation/modification of a file
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
       }
    }
-	  
-
 ```
