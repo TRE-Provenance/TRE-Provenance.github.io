@@ -129,8 +129,8 @@ Agents that were responsible for the activity or creation/modification of a file
       "@type":[
          "shp_VariableConstraint"
       ],
-      "shp_minDate":"2002-09-24",
-      "shp_maxDate":"2022-09-24",
+      "shp_minValue":"2002-09-24",
+      "shp_maxValue":"2022-09-24",
       "shp_targetVariable":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/GENDER"
       }
