@@ -30,7 +30,7 @@ VOCABULARY TERMS (i.e., RO-Crate + SHP Ontology)
  ],
  "@graph":[
 
-PROVENANCE TRAVE CONTENT
+PROVENANCE TRACE CONTENT
 
 ]
 }
