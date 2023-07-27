@@ -17,9 +17,9 @@ The above image illustrates an example sltructure of the DaSH side of the TRE en
 
 # Modelling Elements of Provenance Trace
 
-## Structure 
+# Provenance Trace Structure 
 
-### @id - unique identifier
+## @id - unique identifier
 
 Within the same TRE environment, base IRI for all elements should be the same - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/"
 
@@ -29,27 +29,37 @@ For example, all project-specific data elements will contain project name in the
 
 Individual files contained in the folders will contain the name of teh folder in their IRI in order to establish a unique reference to different copies of the same file - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data.csv"
 
-### @type 
+## @type 
 
 This property is typically modelled as a JSON array to enable multiple types to be associated with the particular element (e.g., the element can be of type of File (i.e. to align with the RO-Crate vocabulary) as defined in the schema.org (http://schema.org/MediaObject) but at the same time it can be also of type of https://w3id.org/shp#DataLinkagePlan defined in the SHP ontology. 
 
-### description
+## description
 
 Auto-generated value.
 
-### label
+## label
 
 Auto-generated from the file name.
 
-### path
+## path
+
+(only applicable to files)
 
 Physical location of the file on the file system.
 
-### hash
+## hash
 
-## Element Examples 
+(only applicable to files)
 
-### Data Linkage Plan 
+Hash of the file
+
+## wasAttributedTo
+
+Agents that were responsible for the activity or creation/modification of a file. The provenance monitoring 
+
+# Element Examples 
+
+## Data Linkage Plan 
 
 ```JSON
 
@@ -62,9 +72,9 @@ Physical location of the file on the file system.
    "label":"linkagePlan.csv",
    "path":"file:///....",
    "shp_hash:"xyz"
-   "wasAttributedTo":{
+   "wasAttributedTo":[{
       "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username1"
-   },
+   }],
    "exifData":[
       {
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#selectedVariables",
