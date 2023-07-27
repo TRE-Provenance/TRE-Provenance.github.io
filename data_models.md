@@ -82,92 +82,59 @@ Agents that were responsible for the activity or creation/modification of a file
 ```JSON
 
 {
-   "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv",
-   "@type":[
-      "File"
-   ],
-   "description":"This  is  data  linkage plan description.",
-   "label":"linkagePlan.csv",
-   "path":"file:///....",
-   "shp_hash:"xyz"
-   "wasAttributedTo":[{
-      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username1"
-   }],
-   "exifData":[
-      {
-         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#selectedVariables",
-         "@type":[
-            "shp_SelectedVariables"
-         ],
-         "hadMember":[
-            {
-               "@id":"https://example.com/variable/gender"
-            },
-            {
-               "@id":"https://example.com/variable/height"
-            },
-            {
-               "@id":"https://example.com/variable/chi"
-            }
-         ]
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv",
+      "@type":[
+         "File","shp_DataLinkagePlan"
+      ],
+      "description":"This  is  data  linkage plan description.",
+      "label":"linkagePlan.csv",
+      "path":"file:///c:/documents/linkagePlan.csv",
+      "wasAttributedTo":{
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/s10mm2"
       },
-      {
-         "@id":"https://example.com/import_signed/data.csv#variableStats1",
-         "@type":[
-            "shp_EntityCharacteristic"
-         ],
-         "shp_minValue":"2",
-         "shp_maxValue":"100",
-         "shp_targetFile":{
-            "@id":"https://example.com/import_signed/data.csv"
-         },
-         "shp_targetFeature":{
-            "@id":"https://example.com/variable/height"
+      "exifData":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#DataSource.a35d45fd-cfcf-44d7-96a3-b44de21a9652"
          }
+      ]
+   },
+   {
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#DataSource.a35d45fd-cfcf-44d7-96a3-b44de21a9652",
+      "@type":[
+         "shp_LinkagePlanDataSource"
+      ],
+      "label":"datasource name",
+      "shp_requestedVariables":{
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc"
       },
-      {
-         "@id":"https://example.com/import_signed/data.csv#variableStats2",
-         "@type":[
-            "shp_EntityCharacteristic"
-         ],
-         "shp_minValue":"F",
-         "shp_maxValue":"M",
-         "shp_targetFile":{
-            "@id":"https://example.com/import_signed/data.csv"
-         },
-         "shp_targetFeature":{
-            "@id":"https://example.com/variable/gender"
+      "shp_constraint":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#VariableConstraint.3987e401-abc0-4d84-9ba2-0fd3a635e6e2"
          }
-      },
-      {
-         "@id":"https://example.com/import_signed/data.csv#variableStats3",
-         "@type":[
-            "shp_EntityCharacteristic"
-         ],
-         "shp_minValue":"0001",
-         "shp_maxValue":"00342",
-         "shp_targetFile":{
-            "@id":"https://example.com/import_signed/data.csv"
-         },
-         "shp_targetFeature":{
-            "@id":"https://example.com/variable/chi"
+      ]
+   },
+   {
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc",
+      "@type":[
+         "shp_RequestedVariables"
+      ],
+      "hadMember":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/GENDER"
          }
-      },
-      {
-         "@id":"https://example.com/import_signed/data.csv#summaryStats",
-         "@type":[
-            "shp_EntityCharacteristic"
-         ],
-         "shp_rowCount":"198",
-         "shp_targetFile":{
-            "@id":"https://example.com/import_signed/data.csv"
-         }
+      ]
+   },
+   {
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#VariableConstraint.3987e401-abc0-4d84-9ba2-0fd3a635e6e2",
+      "@type":[
+         "shp_VariableConstraint"
+      ],
+      "shp_minDate":"2002-09-24",
+      "shp_maxDate":"2022-09-24",
+      "shp_targetVariable":{
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/GENDER"
       }
-	  
-	  
-	  ]
-	  
-	  }
+   }
 	  
 
 ```
