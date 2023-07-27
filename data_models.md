@@ -4,9 +4,28 @@ This document describes how the SHP Ontology is applied to capture the provenanc
 
 # Data Workflow 
 
+![dash_files](https://github.com/TRE-Provenance/TRE-Provenance.github.io/assets/4025828/964fc1ad-df40-4e89-b5ef-1aaf5bbe9856)
+
+The above image illustrates an example sltructure of the DaSH side of the TRE environment with three main folders. 
+
+* **Import Folder**: This folder contains the data files that were transfered from the NHS side of the TRE. The files contain the data (e.g. data.csv) extracted from the protected datasets (e.g., SMR001) following the variable and cohort specification prepared by the researcher (linkage_plan.csv).
+* ***Export Folder***:
+* ***Release Folder***: This folder contains data files (e.g., data.csv) taht have passed the disclosure checks and are now accessible to the researcher. The folder also contains a provenance file without sensitive details (e.g., file paths) taht were previously present in the analyst's version. 
+
+
 # Limitations
 
-# Data Elements
+# Modelling Elements of Provenance Trace
+
+## @id - unique identifier
+
+Within the same TRE environment, base IRI for all elements should be the same - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/"
+
+The PowershellScripts will automatically modify IRIs of individual provenance elements based on the project context and their type. 
+
+For example, all project-specific data elements will contain project name in their IRI  - "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/"
+
+Individual files contained in the folders will contain the name of teh folder in their IRI in order to establish a unique reference to different copies of the same file - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data.csv"
 
 ## Data Linkage Plan 
 
