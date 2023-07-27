@@ -19,7 +19,7 @@ The above image illustrates an example sltructure of the DaSH side of the TRE en
 
 # Provenance Trace Structure 
 
-The provenance trace is modelled as a knowledge graph and stored using a JSON-LD sewrialisation in a static file. The high level structure of the provenance file is as follows:
+The provenance trace is modelled as a knowledge graph and stored using a JSON-LD serialisation in a static file. The high level structure of the provenance file is as follows:
 
 ```JSON
 {
