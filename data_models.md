@@ -19,6 +19,25 @@ The above image illustrates an example sltructure of the DaSH side of the TRE en
 
 # Provenance Trace Structure 
 
+The provenance trace is modelled as a knowledge graph and stored using a JSON-LD sewrialisation in a static file. The high level structure of the provenance file is as follows:
+
+```JSON
+{
+ "@context":[
+
+VOCABULARY TERMS (i.e., RO-Crate + SHP Ontology)
+
+ ],
+ "@graph":[
+
+PROVENANCE TRAVE CONTENT
+
+]
+}
+```
+
+Note, we do not use remote references for the @context part, instead we include the full vocabulary of terms in the static file as the TRE environment is typpically cut off from the Internet. 
+
 ## @id - unique identifier
 
 ```JSON
@@ -81,7 +100,7 @@ Agents that were responsible for the activity or creation/modification of a file
 
 ```JSON
 
-{
+   {
       "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv",
       "@type":[
          "File","shp_DataLinkagePlan"
@@ -89,6 +108,7 @@ Agents that were responsible for the activity or creation/modification of a file
       "description":"This  is  data  linkage plan description.",
       "label":"linkagePlan.csv",
       "path":"file:///c:/documents/linkagePlan.csv",
+	  "shp_hash":"e0d123e5f316bef78bfdf5a008837577",
       "wasAttributedTo":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/s10mm2"
       },
@@ -103,7 +123,7 @@ Agents that were responsible for the activity or creation/modification of a file
       "@type":[
          "shp_LinkagePlanDataSource"
       ],
-      "label":"datasource name",
+      "label":"Data Source Example",
       "shp_requestedVariables":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc"
       },
@@ -120,7 +140,7 @@ Agents that were responsible for the activity or creation/modification of a file
       ],
       "hadMember":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/GENDER"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
          }
       ]
    },
@@ -129,10 +149,10 @@ Agents that were responsible for the activity or creation/modification of a file
       "@type":[
          "shp_VariableConstraint"
       ],
-      "shp_minValue":"2002-09-24",
-      "shp_maxValue":"2022-09-24",
+      "shp_minValue":"160",
+      "shp_maxValue":"190",
       "shp_targetVariable":{
-         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/GENDER"
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
       }
    }
 	  
