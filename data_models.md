@@ -255,7 +255,7 @@ The following example links the Data Linkage Plan and the corresponding source d
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username3"
          }
       ],
-      "label":"Data Release",
+      "label":"NHS data extraction",
       "object":[
          {
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv"
@@ -287,7 +287,7 @@ The following example links the Data Linkage Plan and the corresponding source d
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username2"
          }
       ],
-      "label":"Data Release",
+      "label":"Version v1.2 update (data.csv)",
       "object":[
          {
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data_v1.1.csv"
