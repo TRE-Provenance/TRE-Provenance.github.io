@@ -148,6 +148,7 @@ Database represent the sources of raw patient data and together with data linkag
       ],
       "description":"This  is a database full of useful information.",
       "shp_databaseName":"Example Database",
+      "label":"Example Database",
       "shp_abbreviation":"ED",
       "shp_version":"1.2",
       "shp_dataCustodian":"NHS Grampian",
