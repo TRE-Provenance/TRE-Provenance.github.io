@@ -135,6 +135,31 @@ The SHP ontology defines a class of Sensitive variables (e.g., those containing 
 }
 ```
 
+## Database
+
+Database represent the sources of raw patient data and together with data linkage plan represent initial inputs into the data linkage workflow.
+
+```JSON
+
+ {
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase",
+      "@type":[
+         "shp_Database"
+      ],
+      "description":"This  is a database full of useful information.",
+      "shp_databaseName":"Example Database",
+      "shp_abbreviation":"ED",
+      "shp_version":"1.2",
+      "shp_dataCustodian":"NHS Grampian",
+      "shp_contact":"info@example.com",
+      "shp_lastKnownUpdate":"2022-09-24",
+      "shp_mostRecentRecordDate":"2022-03-24",
+      "shp_oldestRecordDate":"1976-03-24",
+      "shp_contextualInformationLink":"https://www.abdn.ac.uk/iahs/facilities/dash-datasets.php"
+ }
+```
+
+
 
 ## Data Linkage Plan 
 
