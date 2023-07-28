@@ -169,7 +169,7 @@ Now we need to describe the [LinkagePlanDataResource](https://w3id.org/shp#DataL
          "shp_LinkagePlanDataSource"
       ],
       "label":"Data Source Description Example",
-      "shp_database":{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan}
+      "shp_database":{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase"},
       "shp_requestedVariables":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc"
       },
