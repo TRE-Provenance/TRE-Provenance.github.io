@@ -257,12 +257,12 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
       "label":"Data Release",
       "object":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/export/signedOff/data_v1.1.csv"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data_v1.1.csv"
          }
       ],
       "result":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/release/data_v1.2.csv"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data_v1.2.csv"
          }
       ]
    }
@@ -286,7 +286,7 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
       "label":"Data Release",
       "object":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/export/signedOff/data_v1.2.csv"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
          }
       ],
       "result":[
