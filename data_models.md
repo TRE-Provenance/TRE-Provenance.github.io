@@ -238,6 +238,98 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
    }
 ```
 
+## Dataset
+
+```JSON
+
+   {
+      "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv",
+      "@type":[
+         "File"
+      ],
+      "description":"This is dataset about cats after disclosure check.",
+      "label":"data_v1.2.csv",
+      "path":"file:///c:/documents/export/data_v1.2.csv",
+      "shp_hash":"e0d675e5f316bef78bfdf5a008837588",
+      "wasAttributedTo":{
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username1"
+      },
+      "exifData":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#selectedVariables",
+            "@type":[
+               "shp_SelectedVariables"
+            ],
+            "hadMember":[
+               {
+                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/gender"
+               },
+               {
+                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
+               },
+               {
+                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/chi"
+               }
+            ]
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats1",
+            "@type":[
+               "shp_EntityCharacteristic"
+            ],
+            "shp_minValue":"2",
+            "shp_maxValue":"100",
+            "shp_targetFile":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
+            },
+            "shp_targetFeature":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
+            }
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats2",
+            "@type":[
+               "shp_EntityCharacteristic"
+            ],
+            "shp_minValue":"F",
+            "shp_maxValue":"M",
+            "shp_targetFile":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
+            },
+            "shp_targetFeature":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/gender"
+            }
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats3",
+            "@type":[
+               "shp_EntityCharacteristic"
+            ],
+            "shp_minValue":"0001",
+            "shp_maxValue":"00342",
+            "shp_targetFile":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
+            },
+            "shp_targetFeature":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/chi"
+            }
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#summaryStats",
+            "@type":[
+               "shp_EntityCharacteristic"
+            ],
+            "shp_rowCount":"198",
+            "shp_targetFile":{
+               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
+            }
+         }
+      ]
+   }
+
+```
+
+
 ## "Black Box" Activities
 
 Sometimes it is not possible to get accurate information about all activities that occured during the data linkage process. For example, in the current implementation of our provenance monitroing system, we cannot access the NHS side of the Safe Haven. Instead, the analysts provide additional metadata (e.g., about the source Database) in a separate CSV file together with the imported result datasets. In order to ensure the consistency of the provenance record we can abstract these activities into a generic [DaSH Activity](https://safehavenprovenance.github.io/SHP-ontology/index-en.html#DashActivity). 
@@ -261,7 +353,7 @@ The following example links the Data Linkage Plan and the corresponding source d
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv"
          },
 	{
-            "@id":"ttps://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase"
          }
       ],
       "result":[
@@ -331,4 +423,4 @@ The following example links the Data Linkage Plan and the corresponding source d
 
 ```
 
-## Dataset
+
