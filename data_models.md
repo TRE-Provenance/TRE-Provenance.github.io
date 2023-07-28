@@ -240,6 +240,39 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
 
 ## "Black Box" Activities
 
+Sometimes it is not possible to get accurate information about all activities that occured during the data linkage process. For example, in the current implementation of our provenance monitroing system, we cannot access the NHS side of the Safe Haven. Instead, the analysts provide additional metadata (e.g., about the source Database) in a separate CSV file together with the imported result datasets. In order to ensure the consistency of the provenance record we can abstract these activities into a generic [DaSH Activity](https://safehavenprovenance.github.io/SHP-ontology/index-en.html#DashActivity). 
+
+The following example links the Data Linkage Plan and the corresponding source database to the dataset contained in the import folder: 
+
+```JSON
+
+{     "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/Activity/6f41bc5a-9c82-4ea2-8c9c-80fb84be8957",
+      "@type":[
+         "CreateAction", "shp_DashActivity"
+      ],
+      "agent":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username3"
+         }
+      ],
+      "label":"Data Release",
+      "object":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv"
+         },
+	{
+            "@id":"ttps://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase"
+         }
+      ],
+      "result":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data_v1.1.csv"
+         }
+      ]
+   }
+
+
+```
 
 ## Update Activity
 
