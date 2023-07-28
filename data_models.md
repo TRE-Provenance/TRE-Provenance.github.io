@@ -111,7 +111,7 @@ Hash of the file
 ```JSON
 
     "wasAttributedTo":[
-         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/c10ll2"
+         {"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/c10ll2"}
       ],
 ```
 
@@ -174,9 +174,9 @@ Database represent the sources of raw patient data and together with data linkag
       "label":"linkagePlan.csv",
       "path":"file:///c:/documents/linkagePlan.csv",
 	  "shp_hash":"e0d123e5f316bef78bfdf5a008837577",
-      "wasAttributedTo":{
+      "wasAttributedTo":[{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/s10mm2"
-      },
+      }],
       "exifData":[
          {
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#DataSource.a35d45fd-cfcf-44d7-96a3-b44de21a9652"
