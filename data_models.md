@@ -76,9 +76,20 @@ Auto-generated value.
 
 ## label
 
+```JSON
+
+     "label":"linkagePlan.csv",
+```
+
 Auto-generated from the file name.
 
 ## path
+
+```JSON
+
+  "path":"file:///c:/documents/linkagePlan.csv",
+
+```
 
 (only applicable to files)
 
@@ -86,15 +97,40 @@ Physical location of the file on the file system.
 
 ## hash
 
+```JSON
+
+    "shp_hash":"e0d123e5f316bef78bfdf5a008837577",
+```
+
 (only applicable to files)
 
 Hash of the file
 
 ## wasAttributedTo
 
+```JSON
+
+    "wasAttributedTo":[
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/c10ll2"
+      ],
+```
+
 Agents that were responsible for the activity or creation/modification of a file. The provenance monitoring 
 
 # Element Examples 
+
+## Variables
+
+```JSON
+{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/height",
+"@type":["shp_Variable"],"label":"Height"
+},
+
+{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/postcode",
+"@type":["shp_SensitiveVariable"],"label":"postcode"
+}
+```
+
 
 ## Data Linkage Plan 
 
