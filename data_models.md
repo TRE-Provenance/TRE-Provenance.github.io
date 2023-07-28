@@ -254,25 +254,44 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
       "wasAttributedTo":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username1"
       },
+```
+
+Dataset descriptions include basic statistics describing distribution of values for each variable contained in the dataset and generic statistic about the whole datasets (e.g., number of rows). 
+
+```JSON
       "exifData":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#selectedVariables",
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#selectedVariables" 
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats1"
+         },
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#summaryStats"
+         }
+      ]
+   },
+```
+Collection describing the variables contained in the dataset.
+
+```JSON
+   {
+    "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#selectedVariables",
             "@type":[
                "shp_SelectedVariables"
             ],
-            "hadMember":[
+            "hadMember":[           
                {
-                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/gender"
-               },
-               {
-                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
-               },
-               {
-                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/chi"
+                  "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase/variable/height"
                }
             ]
-         },
-         {
+     },
+```
+
+Element describing further statistics for variable height: 
+
+```JSON
+     {
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats1",
             "@type":[
                "shp_EntityCharacteristic"
@@ -286,34 +305,12 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
                "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
             }
          },
-         {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats2",
-            "@type":[
-               "shp_EntityCharacteristic"
-            ],
-            "shp_minValue":"F",
-            "shp_maxValue":"M",
-            "shp_targetFile":{
-               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
-            },
-            "shp_targetFeature":{
-               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/gender"
-            }
-         },
-         {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#variableStats3",
-            "@type":[
-               "shp_EntityCharacteristic"
-            ],
-            "shp_minValue":"0001",
-            "shp_maxValue":"00342",
-            "shp_targetFile":{
-               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
-            },
-            "shp_targetFeature":{
-               "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/chi"
-            }
-         },
+```
+
+Element describing the sumary statistics:
+
+```JSON
+
          {
             "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv#summaryStats",
             "@type":[
@@ -324,8 +321,6 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
                "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/export/signedOff/data_v1.2.csv"
             }
          }
-      ]
-   }
 
 ```
 
