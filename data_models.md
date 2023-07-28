@@ -125,7 +125,11 @@ Agents that were responsible for the activity or creation/modification of a file
 {"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/height",
 "@type":["shp_Variable"],"label":"Height"
 },
+```
 
+The SHP ontology defines a class of Sensitive variables (e.g., those containing identifiable information) which should not appear in the released files.   
+
+```JSON
 {"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/postcode",
 "@type":["shp_SensitiveVariable"],"label":"postcode"
 }
