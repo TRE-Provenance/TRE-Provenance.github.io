@@ -238,6 +238,32 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
    }
 ```
 
-## Activity
+## Data Release Activity
+
+```JSON
+
+{     "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/DatasetRelease/d4c7c1bb-a4a4-42ca-bdb6-188c4a6fd87a",
+      "@type":[
+         "CreateAction"
+      ],
+      "agent":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/staff/username2"
+         }
+      ],
+      "label":"Data Release",
+      "object":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/export/signedOff/data.csv"
+         }
+      ],
+      "result":[
+         {
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/release/data.csv"
+         }
+      ]
+   }
+
+```
 
 ## Dataset
