@@ -122,7 +122,7 @@ Agents that were responsible for the activity or creation/modification of a file
 ## Variables
 
 ```JSON
-{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/height",
+{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase/variable/height",
 "@type":["shp_Variable"],"label":"Height"
 },
 ```
@@ -130,7 +130,7 @@ Agents that were responsible for the activity or creation/modification of a file
 The SHP ontology defines a class of Sensitive variables (e.g., those containing identifiable information) which should not appear in the released files.   
 
 ```JSON
-{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/dataset1/variable/postcode",
+{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase/variable/postcode",
 "@type":["shp_SensitiveVariable"],"label":"postcode"
 }
 ```
@@ -168,7 +168,8 @@ Now we need to describe the [LinkagePlanDataResource](https://w3id.org/shp#DataL
       "@type":[
          "shp_LinkagePlanDataSource"
       ],
-      "label":"Data Source Example",
+      "label":"Data Source Description Example",
+      "shp_database":{"@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan}
       "shp_requestedVariables":{
          "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/linkagePlan.csv#RequestedVariables.9eedfc96-d26a-45af-8c83-065ccf1d24dc"
       },
@@ -190,7 +191,7 @@ The following code describes the collection of requested variables mentioned in 
       ],
       "hadMember":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase/variable/height"
          }
       ]
    },
@@ -207,7 +208,10 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
       "shp_minValue":"160",
       "shp_maxValue":"190",
       "shp_targetVariable":{
-         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/variable/height"
+         "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/exampleDatabase/variable/height"
       }
    }
 ```
+
+## Activity
+
