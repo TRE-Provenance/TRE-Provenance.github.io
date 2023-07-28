@@ -10,7 +10,7 @@ The above image illustrates an example sltructure of the DaSH side of the TRE en
 
 * **Import Folder**: This folder contains the data files that were transfered from the NHS side of the TRE. The files contain the data (e.g. data.csv) extracted from the protected datasets (e.g., SMR001) following the variable and cohort specification prepared by the researcher (linkage_plan.csv).
 * ***Export Folder***:
-* ***Release Folder***: This folder contains data files (e.g., data.csv) taht have passed the disclosure checks and are now accessible to the researcher. The folder also contains a provenance file without sensitive details (e.g., file paths) taht were previously present in the analyst's version. 
+* ***Release Folder***: This folder contains data files (e.g., data.csv) that have passed the disclosure checks and are now accessible to the researcher. The folder also contains a provenance file without sensitive details (e.g., file paths) taht were previously present in the analyst's version. 
 
 
 # Limitations
