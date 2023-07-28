@@ -8,9 +8,9 @@ This document describes how the SHP Ontology is applied to capture the provenanc
 
 The above image illustrates an example sltructure of the DaSH side of the TRE environment with three main folders. 
 
-* **Import Folder**: This folder contains the data files that were transfered from the NHS side of the TRE. The files contain the data (e.g. data.csv) extracted from the protected datasets (e.g., SMR001) following the variable and cohort specification prepared by the researcher (linkage_plan.csv).
+* **Import Folder**: This folder contains the data files that were transfered from the NHS side of the TRE. The files contain the data (e.g. data_v1.2.csv) extracted from the protected datasets (e.g., SMR001) following the variable and cohort specification prepared by the researcher (linkage_plan.csv).
 * ***Export Folder***:
-* ***Release Folder***: This folder contains data files (e.g., data.csv) that have passed the disclosure checks and are now accessible to the researcher. The folder also contains a provenance file without sensitive details (e.g., file paths) taht were previously present in the analyst's version. 
+* ***Release Folder***: This folder contains data files (e.g., data_v1.2.csv) that have passed the disclosure checks and are now accessible to the researcher. The folder also contains a provenance file without sensitive details (e.g., file paths) taht were previously present in the analyst's version. 
 
 
 # Limitations
@@ -52,7 +52,7 @@ The PowershellScripts will automatically modify IRIs of individual provenance el
 
 For example, all project-specific data elements will contain project name in their IRI  - "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/"
 
-Individual files contained in the folders will contain the name of teh folder in their IRI in order to establish a unique reference to different copies of the same file - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data.csv"
+Individual files contained in the folders will contain the name of teh folder in their IRI in order to establish a unique reference to different copies of the same file - e.g., "https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/import/data_v1.2.csv"
 
 ## @type 
 
@@ -254,12 +254,12 @@ Finally, we will describe any constraints mentioned in the [LinkagePlanDataResou
       "label":"Data Release",
       "object":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/export/signedOff/data.csv"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/export/signedOff/data_v1.2.csv"
          }
       ],
       "result":[
          {
-            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/release/data.csv"
+            "@id":"https://www.abdn.ac.uk/iahs/facilities/grampian-data-safe-haven/project1/release/data_v1.2.csv"
          }
       ]
    }
