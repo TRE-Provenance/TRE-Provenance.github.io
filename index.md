@@ -29,5 +29,4 @@ The TEC Toolkit includes the resources listed below. Every resource has its own 
 
 # Acknowledgments
 
-This work was funded by UK Research & Innovation [Grant Number 
-MC_PC_XXXX – N.B. grant reference to be confirmed] as part of Phase 1 of the DARE UK (Data and Analytics Research Environments UK) programme, delivered in partnership with Health Data Research UK (HDR UK) and Administrative Data Research UK (ADR UK)’
+This work was funded by UK Research & Innovation [Grant Number MC_PC_23005] as part of Phase 1 of the DARE UK (Data and Analytics Research Environments UK) programme, delivered in partnership with Health Data Research UK (HDR UK) and Administrative Data Research UK (ADR UK)
