@@ -25,8 +25,8 @@ The TEC Toolkit includes the resources listed below. Every resource has its own 
 
 ## Software 
 - [Variable Selection Tool] ()
-- [TRE Provenance Monitor] ()
-- [TRE Provenance Explorer] ()
+- [TRE Provenance Monitor](https://github.com/TRE-Provenance/TRE-Provenance-Monitor)
+- [TRE Provenance Explorer](https://github.com/TRE-Provenance/TRE-Provenance-Explorer)
 
 # Getting Started
 
