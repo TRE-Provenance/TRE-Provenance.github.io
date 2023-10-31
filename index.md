@@ -12,6 +12,9 @@ Our tools (TRE Provenance Explorer and TRE Provenance Monitor) aim to assit with
 
 * [Milan Markovic](https://orcid.org/0000-0002-5477-287X), Interdisciplinary Centre for Data and AI, [University of Aberdeen](https://www.abdn.ac.uk/)
 * [Katherine O'Sullivan](), Grampian Data Safe Haven (DaSH), [University of Aberdeen](https://www.abdn.ac.uk/)
+* [Jaroslaw Dymiter](https://www.abdn.ac.uk/people/jaroslaw.dymiter/), Grampian Data Safe Haven (DaSH), [University of Aberdeen](https://www.abdn.ac.uk/)
+*  [Adrian Martin](https://www.abdn.ac.uk/people/a.martin/), Grampian Data Safe Haven (DaSH), [University of Aberdeen](https://www.abdn.ac.uk/)
+*  [Helen Rowlands](https://www.abdn.ac.uk/people/helen.rowlands/), Grampian Data Safe Haven (DaSH), [University of Aberdeen](https://www.abdn.ac.uk/)
 
 ## License
 
