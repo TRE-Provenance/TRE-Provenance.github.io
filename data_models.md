@@ -1,6 +1,6 @@
 # Data Models 
 
-This document describes how the SHP Ontology is applied to capture the provenance of teh data linkage process using the PowerShell scripts in a Microsoft Server environment. 
+This document describes how the SHP Ontology is applied to capture the provenance of the data linkage process using the PowerShell scripts in a Microsoft Server environment. 
 
 # Data Workflow 
 
