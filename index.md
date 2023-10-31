@@ -27,7 +27,7 @@ The license for the TRE Provenance Explorer, TRE Provenance Monitor and any supp
 The TEC Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TEC-Toolkit organization](https://github.com/TRE-Provenance):
 
 ## Software 
-- [Variable Selection Tool] ()
+- [Variable Selection Tool](https://github.com/TRE-Provenance/Variable-Specification-Selection-Tool)
 - [TRE Provenance Monitor](https://github.com/TRE-Provenance/TRE-Provenance-Monitor)
 - [TRE Provenance Explorer](https://github.com/TRE-Provenance/TRE-Provenance-Explorer)
 
