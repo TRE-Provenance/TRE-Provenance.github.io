@@ -24,7 +24,7 @@ Our tools (TRE Provenance Explorer and TRE Provenance Monitor) aim to assit with
 The license for the TRE Provenance Explorer, TRE Provenance Monitor and any supporting examples is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
 
 # Resources
-The TEC Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TEC-Toolkit organization](https://github.com/TRE-Provenance):
+The TRE Provenance Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TRE-Provenance organization](https://github.com/TRE-Provenance):
 
 ## Software 
 - [Variable Selection Tool](https://github.com/TRE-Provenance/Variable-Specification-Selection-Tool)
