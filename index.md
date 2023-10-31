@@ -33,7 +33,11 @@ The TRE Provenance Toolkit includes the resources listed below. Every resource h
 
 ## Ontology
 
-[SHP Ontology v0.2](https://tre-provenance.github.io/SHP-ontology/releases/v0.2/index-en.html)
+- [SHP Ontology v0.2](https://tre-provenance.github.io/SHP-ontology/releases/v0.2/index-en.html)
+
+## Reports 
+
+- [Participatory Design and Evaluation of a Data Provenance Dashboard: SARA](https://github.com/TRE-Provenance/Reports/blob/main/SARA%20-%20Data%20Provenance%20Tool%20Design%20and%20Evaluation%20-%20Final%20Report%2031102023.pdf)
 
 # Getting Started
 
