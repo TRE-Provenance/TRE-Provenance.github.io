@@ -21,7 +21,7 @@ Our tools (TRE Provenance Explorer and TRE Provenance Monitor) aim to assit with
 
 ## License
 
-The license for the TRE Provenance Explorer, TRE Provenance Monitor and any supporting examples is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
+The license for the TRE Provenance Explorer, TRE Provenance Monitor, the SHP Ontology and any supporting examples is [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0).
 
 # Resources
 The TRE Provenance Toolkit includes the resources listed below. Every resource has its own GitHub repository, available in the [TRE-Provenance organization](https://github.com/TRE-Provenance):
@@ -30,6 +30,10 @@ The TRE Provenance Toolkit includes the resources listed below. Every resource h
 - [Variable Selection Tool](https://github.com/TRE-Provenance/Variable-Specification-Selection-Tool)
 - [TRE Provenance Monitor](https://github.com/TRE-Provenance/TRE-Provenance-Monitor)
 - [TRE Provenance Explorer](https://github.com/TRE-Provenance/TRE-Provenance-Explorer)
+
+## Ontology
+
+[SHP Ontology v0.2](https://tre-provenance.github.io/SHP-ontology/releases/v0.2/index-en.html)
 
 # Getting Started
 
